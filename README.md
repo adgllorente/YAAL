@@ -6,7 +6,11 @@ YAAL also has support for remote controllers, identificates different models of 
 
 # Installation
 
-Installation instructions may be found under Deploy folder.
+
+
+# Device deployment
+
+To know hot to execute YAAL in a device go to /Deploy folder. 
 
 # Disclaimer
 
