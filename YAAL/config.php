@@ -1,2 +1,4 @@
-$DB_KEY = "";
-$DB_NAME = "";
+<?php
+	$DB_KEY = "";
+	$DB_NAME = "";
+?>
