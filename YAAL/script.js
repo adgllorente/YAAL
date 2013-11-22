@@ -85,7 +85,7 @@ var doPressButton = function() {
 	var keyPressed = window.event.keyCode,
 		positionToLoad = keyPressed - keyMapNavigator.N1;
 
-	// Start key mapping
+	// ----- CHANGE THIS FOR KEY MAPPING USING USERAGENT
 
 	var isLG = /.*LG.*/.test(navigator.userAgent),
 		isSamsung = /.*SMART-TV.*/.test(navigator.userAgent),
@@ -99,7 +99,7 @@ var doPressButton = function() {
 		key = keyMapNavigator;
 	}
 
-	// End key mapping
+	// ------ END KEY MAPPING
 
 	console.log(keyPressed);
 	if ($('input:focus').length === 0) {
