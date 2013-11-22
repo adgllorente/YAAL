@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<script src="./lib/jquery-1.5.2.min.js"></script>
+		<script src="keys.js"></script>
 		<script src="script.js"></script>
 		<link rel="stylesheet" href="style.css" type="text/css" />
 	</head>

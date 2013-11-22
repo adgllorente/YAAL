@@ -78,7 +78,7 @@ var saveElement = function() {
 
 var doPressButton = function() {
 	var keyPressed = window.event.keyCode,
-		positionToLoad = keyPressed - 49;
+		positionToLoad = keyPressed - keyMapNavigator.N1;
 
 	// Start key mapping
 
@@ -90,28 +90,36 @@ var doPressButton = function() {
 		key = keyMapLG;
 	} else if (isSamsung) {
 		key = keyMapSamsung;
+	} else {
+		key = keyMapNavigator;
 	}
 
 	// End key mapping
 
 	console.log(keyPressed);
-	if (isLG) {
+	// if (isLG) {
 		if ($('input:focus').length === 0) {
-			if (keyPressed === Key.RED) {
+			if (keyPressed === key.RED) {
+				console.log("Key RED pressed");
 				document.location.reload(true);
-			} else if (keyPressed >= Key.N1 && keyPressed <= Key.N9) {
+			} else if (keyPressed >= key.N1 && keyPressed <= key.N9) {
+				console.log("Key NUMBER pressed");
+				console.log("Loading position: " + positionToLoad);
 				window.location = $('.menu-item:eq(' + positionToLoad + ') a').attr('href');
-			} else if (keyPressed === Key.DOWN) { // DOWN
+			} else if (keyPressed === key.DOWN) { // DOWN
+				console.log("Key DOWN pressed");
 				positionSelected = positionSelected === $('.menu-item').length - 1 ? 0 : positionSelected + 1;
 				_selectItem($('.menu-item:eq(' + positionSelected + ')'));
-			} else if (keyPressed === Key.UP) { // UP
+			} else if (keyPressed === key.UP) { // UP
+				console.log("Key UP pressed");
 				positionSelected = positionSelected === 0 ? $('.menu-item').length - 1 : positionSelected - 1;
 				_selectItem($('.menu-item:eq(' + positionSelected + ')'));
-			} else if (keyPressed === Key.OK && positionSelected > -1) {
+			} else if (keyPressed === key.OK && positionSelected > -1) {
+				console.log("Key OK pressed");
 				window.location = $('.menu-item:eq(' + positionSelected + ') a').attr('href');
 			}
 		}
-	}
+	// }
 };
 
 var _selectItem = function(link) {

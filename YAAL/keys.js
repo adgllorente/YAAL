@@ -57,3 +57,21 @@ keyMapSamsung.N7 = 55;
 keyMapSamsung.N8 = 56;
 keyMapSamsung.N9 = 57;
 keyMapSamsung.RED = 108;
+
+/************************************
+ * Keys Navigator
+ ***********************************/
+var keyMapNavigator = {};
+keyMapNavigator.OK = 13;
+keyMapNavigator.DOWN = 40;
+keyMapNavigator.UP = 38;
+keyMapNavigator.N1 = 49;
+keyMapNavigator.N2 = 50;
+keyMapNavigator.N3 = 51;
+keyMapNavigator.N4 = 52;
+keyMapNavigator.N5 = 53;
+keyMapNavigator.N6 = 54;
+keyMapNavigator.N7 = 55;
+keyMapNavigator.N8 = 56;
+keyMapNavigator.N9 = 57;
+keyMapNavigator.RED = 403;
