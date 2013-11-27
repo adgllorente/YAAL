@@ -1,1 +1,1 @@
-var LAUNCHER_URL="http://www.google.com";
+var LAUNCHER_URL="";
