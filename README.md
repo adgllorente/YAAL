@@ -10,7 +10,17 @@ YAAL also has support for remote controllers, identificates different models of 
 
 # Device deployment
 
-To know hot to execute YAAL in a device go to /Deploy folder. 
+To know hot to execute YAAL in a device go to /Deploy folder.
+
+# Screenshot
+
+## Running on PC (Admin)
+
+![Running in PC](https://raw.github.com/adgllorente/YAAL/develop/Screenshots/screenshot-pc.png)
+
+## Running on device
+
+![Running on device](https://raw.github.com/adgllorente/YAAL/develop/Screenshots/screenshot-tv.png)
 
 # Disclaimer
 
